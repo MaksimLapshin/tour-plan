@@ -315,6 +315,7 @@ template {
 body {
   font-family: "Mulish", sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -414,6 +415,92 @@ body {
   color: #fff;
 }
 
+.breadcrumb-wrapper {
+  padding: 18px 0;
+}
+.breadcrumb__item {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.breadcrumb__list {
+  padding-right: 4px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+.breadcrumb__list:not(:last-child)::after {
+  content: "/";
+}
+.breadcrumb__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hotel-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotel-info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hotel-info__stars {
+  margin-bottom: 3px;
+}
+.hotel-info__title {
+  margin: 0;
+  margin-right: 14px;
+}
+.hotel-info__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0;
+}
+
+.offer {
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px 9px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.stars {
+  flex-basis: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.rating {
+  max-width: 65px;
+  min-height: 45px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+.rating__text {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+.rating__counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -471,31 +558,33 @@ body {
   .logo {
     width: 99px;
   }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-info__title {
+    flex-basis: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .hotel-info__wrapper {
+    justify-content: space-between;
+  }
+  .hotel-info__stars {
+    margin-bottom: 0;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-info__offer {
+    order: -1;
+    margin-left: 0;
+  }
+  .stars {
+    flex-basis: content;
+  }
 }
 @media (max-width: 525px) {
   .container {
     width: 92%;
   }
-}
-.breadcrumb-wrapper {
-  margin-top: 18px;
-}
-.breadcrumb__item {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.breadcrumb__list {
-  padding-right: 4px;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-}
-.breadcrumb__list:not(:last-child)::after {
-  content: "/";
-}
-.breadcrumb__link {
-  text-decoration: none;
-  color: inherit;
 }/*# sourceMappingURL=style.css.map */
